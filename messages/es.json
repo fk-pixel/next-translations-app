@@ -1,26 +1,28 @@
 {
   "About": {
-    "title": "About",
-    "lastUpdated": "This example was updated {lastUpdatedRelative} ({lastUpdated, date, esDate})."
+    "title": "Hogar",
+    "lastUpdated": "Este ejemplo fue actualizado {lastUpdatedRelative} ({lastUpdated, date, esDate}).",
+    "exShortDate": "{newDate, shortDate}",
+    "exLongDate": "{newDate, longDate}"
   },
   "Index": {
     "title": "Home",
     "description": "<p>Only the minimum of <code>{locale}</code> messages are loaded to render this page.</p><p>These namespaces are available:</p>"
   },
   "Navigation": {
-    "index": "Home",
-    "about": "About",
-    "switchLocale": "Switch to {locale, select, de {German} en {English} fr {French} es {Spain} other {Unknown}}"
+    "index": "Hogar",
+    "about": "Sobre",
+    "switchLocale": "Cambiar a {locale, select, de {German} en {English} fr {French} es {Spain} other {Unknown}}"
   },
   "NotFound": {
-    "title": "Sorry, this page could not be found."
+    "title": "Lo sentimos, esta página no se pudo encontrar."
   },
   "PageLayout": {
     "pageTitle": "next-intl"
   },
   "StrictTypes": {
     "nested": {
-      "hello": "Hello",
+      "hello": "Hola",
       "another": {
         "level": "Level"
       }
