@@ -2,8 +2,8 @@
   "About": {
     "title": "About",
     "lastUpdated": "This example was updated {lastUpdatedRelative} ({lastUpdated, date, frDate}).",
-    "exShortDate": "{newDate, shortDate}",
-    "exLongDate": "{newDate, longDate}"
+    "exShortDate": "{newDate, date, shortDate}",
+    "exLongDate": "{newDate, date, longDate}"
   },
   "Index": {
     "title": "Home",
