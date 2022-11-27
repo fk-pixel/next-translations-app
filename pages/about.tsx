@@ -14,6 +14,19 @@ type YearType = Pick<DateTimeFormatOptions, "year">;
 const DayOptions: DayType = {};
 const MonthOptions: MonthType = {};
 const YearOptions: YearType = {};
+interface DateProps {
+  day: "numeric" | "2-digit" | string | null | undefined;
+  month:
+    | "numeric"
+    | "2-digit"
+    | "long"
+    | "short"
+    | "narrow"
+    | string
+    | null
+    | undefined;
+  year: "numeric" | "2-digit" | string | null | undefined;
+}
 
 export default function About() {
   const t = useTranslations();
@@ -21,13 +34,25 @@ export default function About() {
   const lastUpdated = parseISO("2021-12-23T10:04:45.567Z");
   const newDate = new Date();
 
-  const [shortDate, setShortDate] = React.useState<DateTimeFormatOptions>({
+  const [shortDate, setShortDate] = React.useState<DateProps>({
     day: "numeric",
     month: "short",
     year: "2-digit",
   });
 
-  const [longDate, setLongDate] = React.useState({
+  // const [shortDate, setShortDate] = React.useState({
+  //   day: "numeric",
+  //   month: "short",
+  //   year: "2-digit",
+  // });
+
+  // const [longDate, setLongDate] = React.useState({
+  //   day: "numeric",
+  //   month: "long",
+  //   year: "long",
+  // });
+
+  const [longDate, setLongDate] = React.useState<DateProps>({
     day: "numeric",
     month: "long",
     year: "long",
@@ -87,7 +112,7 @@ export default function About() {
             ) => {
               setShortDate({
                 ...shortDate,
-                day: newValue !== undefined ? newValue : "2-digit",
+                day: newValue !== undefined ? newValue : undefined,
               });
             }}
             renderInput={(params) => (
@@ -119,7 +144,7 @@ export default function About() {
             ) => {
               setShortDate({
                 ...shortDate,
-                month: newValue !== null ? newValue : "",
+                month: newValue !== null ? newValue : undefined,
               });
             }}
             componentName={"short-month"}
@@ -154,7 +179,7 @@ export default function About() {
             ) => {
               setShortDate({
                 ...shortDate,
-                year: newValue !== null ? newValue : "",
+                year: newValue !== null ? newValue : undefined,
               });
             }}
             componentName={"short-year"}
@@ -185,7 +210,7 @@ export default function About() {
             ) => {
               setLongDate({
                 ...longDate,
-                day: newValue !== null ? newValue : "",
+                day: newValue !== null ? newValue : undefined,
               });
             }}
             componentName={"long-day"}
@@ -209,7 +234,7 @@ export default function About() {
             ) => {
               setLongDate({
                 ...longDate,
-                month: newValue !== null ? newValue : "",
+                month: newValue !== null ? newValue : undefined,
               });
             }}
             componentName={"long-month"}
@@ -236,7 +261,7 @@ export default function About() {
             ) => {
               setLongDate({
                 ...longDate,
-                year: newValue !== null ? newValue : "",
+                year: newValue !== null ? newValue : undefined,
               });
             }}
             key={6}
