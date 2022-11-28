@@ -16,6 +16,10 @@ const nextConfig = {
     localeDetection: true,
   },
   trailingSlash: true,
+  // experimental: {
+  //   concurrentFeatures: true,
+  //   serverComponents: true,
+  // },
 };
 
 module.exports = nextConfig;

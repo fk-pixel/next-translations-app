@@ -1,28 +1,36 @@
 {
   "About": {
-    "title": "About",
-    "lastUpdated": "This example was updated {lastUpdatedRelative} ({lastUpdated, date, frDate}).",
+    "title": "À propos de",
+    "lastUpdated": "Cet exemple a été mis à jour {lastUpdatedRelative} ({lastUpdated, date, frDate}).",
     "exShortDate": "{newDate, date, shortDate}",
-    "exLongDate": "{newDate, date, longDate}"
+    "exLongDate": "{newDate, date, longDate}",
+    "new": {
+      "a": "a",
+      "last": {
+        "extrem": "YAA",
+        "title": "À propos de",
+        "lastUpdated": "Cet exemple a été mis à jour {lastUpdatedRelative} ({lastUpdated, date, frDate})."
+      }
+    }
   },
   "Index": {
-    "title": "Home",
-    "description": "<p>Only the minimum of <code>{locale}</code> messages are loaded to render this page.</p><p>These namespaces are available:</p>"
+    "title": "Maison",
+    "description": "<p>Seul le minimum de <code>{locale}</code> les messages sont chargés pour rendre cette page.</p><p>Ces espaces de noms sont disponibles :</p>"
   },
   "Navigation": {
-    "index": "Home",
-    "about": "About",
-    "switchLocale": "Switch to {locale, select, de {German} en {English} fr {French} es {Spain} other {Unknown}}"
+    "index": "Maison",
+    "about": "À propos de",
+    "switchLocale": "Basculer vers {locale, select, de {German} en {English} fr {French} es {Spain} other {Unknown}}"
   },
   "NotFound": {
-    "title": "Sorry, this page could not be found."
+    "title": "Désolé, cette page est introuvable."
   },
   "PageLayout": {
     "pageTitle": "next-intl"
   },
   "StrictTypes": {
     "nested": {
-      "hello": "Hello",
+      "hello": "Bonjour",
       "another": {
         "level": "Level"
       }

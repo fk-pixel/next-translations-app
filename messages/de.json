@@ -1,16 +1,24 @@
 {
   "About": {
-    "title": "About",
+    "title": "Über",
     "lastUpdated": "Dieses Beispiel wurde {lastUpdatedRelative} aktualisiert ({lastUpdated, date, deDate}).",
     "exShortDate": "{newDate, date, shortDate}",
-    "exLongDate": "{newDate, date, longDate}"
+    "exLongDate": "{newDate, date, longDate}",
+    "new": {
+      "a": "a",
+      "last": {
+        "extrem": "YAA",
+        "title": "Über",
+        "lastUpdated": "Dieses Beispiel wurde {lastUpdatedRelative} aktualisiert ({lastUpdated, date, deDate})."
+      }
+    }
   },
   "Index": {
-    "title": "Start",
+    "title": "Beginn",
     "description": "<p>Nur das Minimum an <code>{locale}</code> Übersetzungen sind geladen um diese Seite darzustellen.</p><p>Diese Namespaces sind verfügbar:</p>"
   },
   "Navigation": {
-    "index": "Start",
+    "index": "Beginn",
     "about": "Über",
     "switchLocale": "Zu {locale, select, de {Deutsch} en {Englisch} fr {French} es {Spain} other {Unbekannt}} wechseln"
   },
