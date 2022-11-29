@@ -4,8 +4,10 @@
     "lastUpdated": "Este ejemplo fue actualizado {lastUpdatedRelative} ({lastUpdated, date, esDate}).",
     "exShortDate": "{newDate, date, shortDate}",
     "exLongDate": "{newDate, date, longDate}",
+    "newDate": "here is example {newDate, date, kurt} ",
     "new": {
       "a": "a",
+      "test": "heyo {newDate, date, kurt}",
       "last": {
         "extrem": "YAA",
         "title": "Hogar",

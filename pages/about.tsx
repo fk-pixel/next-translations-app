@@ -36,8 +36,8 @@ export default function About() {
 
   const intl = useIntl();
   const lastUpdated = parseISO("2021-12-23T10:04:45.567Z");
-  const newDate = new Date();
-
+  const newDate = parseISO(new Date().toISOString());
+  console.log(new Date().toISOString());
   // const [shortDate, setShortDate] = React.useState<DateTimeFormatOptions>({
   //   day: "numeric",
   //   month: "short",
@@ -104,7 +104,17 @@ export default function About() {
             }
           )}
         </p>
-        {/* <li>{t("extrem")}</li> */}
+        <li>
+          {t(
+            "newDate",
+            { newDate },
+            {
+              dateTime: {
+                kurt: { day: "2-digit", month: "long", year: "2-digit" },
+              },
+            }
+          )}
+        </li>
         <div style={{ marginTop: 45, display: "block" }}>
           <div style={{ display: "flex", marginBottom: 25 }}>
             <Autocomplete
